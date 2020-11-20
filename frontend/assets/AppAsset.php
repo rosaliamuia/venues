@@ -15,8 +15,10 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'css/custom.css',
 
+        'css/navbar.css',
     ];
     public $js = [
+      'js/navbar.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
