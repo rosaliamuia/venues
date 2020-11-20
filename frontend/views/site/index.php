@@ -105,7 +105,7 @@ $this->title = 'VENUES';
     <div class="col-md-3 ">
     <div class="single-card  ">
     <div class="card card-category border border-light ">
-    <img src="images/events.png" class="img-fluid" alt="">
+    <img src="images/guitar.png" class="img-fluid" alt="">
 		<h5 class="font-weight-light text-center">Events</h5>
 	    </div>
     </div>

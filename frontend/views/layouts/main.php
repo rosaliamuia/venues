@@ -1,15 +1,12 @@
 <?php
-
 /* @var $this \yii\web\View */
 /* @var $content string */
-
 use yii\helpers\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
-
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -19,43 +16,34 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php $this->registerCsrfMetaTags() ?>
+    <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
 <body class="h-100">
 <?php $this->beginBody() ?>
-
-
 <div class="wrap" style="background: url(images/pier.jpg)">
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Venue</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+          <!-- brand -->
+        <div>
+          <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+          <a href="#" class="navbar-brand">Venue</a>
         </div>
-
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="float-left">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="#" class="nav-link rounded-pill listing-home-active">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item listing-home rounded-pill"><a href="#" class="nav-link">Venues</a></li>
+              <li class="nav-item listing-home rounded-pill"><a href="#" class="nav-link">Service Providers</a></li>
+          </ul>
+          </div>
+        </div>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                       <a href="#" role="button" class="nav-link dropdown-toggle font-weight-bold" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -71,7 +59,6 @@ AppAsset::register($this);
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link rounded-pill addlisting">  Add Listing  <i class="fa fa-plus-circle"></i> </a></li>
                 </ul>
-
         </div>
     </nav>
 </header>
@@ -83,9 +70,6 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
-
-
-
             <!--footer-->
             <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
@@ -125,8 +109,6 @@ AppAsset::register($this);
     </div>
   </footer>
             <!--footer-->
-
-
 <?php $this->endBody() ?>
 </body>
 </html>
