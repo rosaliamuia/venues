@@ -21,13 +21,14 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php $this->head() ?>
 </head>
-<body>
+<body class="h-100">
 <?php $this->beginBody() ?>
 
 
-<div class="wrap">
+<div class="wrap" style="background: url(images/pier.jpg)">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Venue</a>

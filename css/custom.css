@@ -1,0 +1,58 @@
+
+/*search box css start here*/
+
+.search-slt{
+    
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: #fff;
+    height: calc(3rem + 2px) !important;
+    border:0;
+}
+
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+
+.card.card-category {
+	background-color: #EEEEEE;
+	width: 8rem; 
+	height: 8rem;
+	margin-top: 1rem;
+
+}
+.card.card-category img {
+    height: 75%;
+
+}
+
+.popular-category{
+	background-color:#F7F7F7 ; 
+	height:250px;
+	width: 100%;
+	margin-bottom: 70px;
+	padding-top: 2rem;
+
+}
+.card.card-category:hover{
+    transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06); background: #F91942
+}
+.single-card {
+	margin-bottom: 50px;
+}
+.trial h4
+{
+   font-family: "Roboto", "Open Sans";
+} 
