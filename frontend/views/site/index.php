@@ -7,21 +7,21 @@ use yii\helpers\Url;
 $this->title = 'VENUES';
 ?>
 <div class="site-index d-flex align-items-center"> 
-<div class="container">
+<div class="container-fluid">
        
  <!-- searchbar -->
- <div class="container searchbar ">
-                   <div class="row">
-                   <div class=" col-lg-12">
-                    <div class="row ">
-                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                            <input type="text" class="form-control search-slt" placeholder="What are you looking for?">
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                            <input type="text" class="form-control search-slt" placeholder="Location">
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+ <div class="container searchbar">
+    <div class="row">
+        <div class=" col-lg-12">
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                        <input type="text" class="form-control search-slt" placeholder="What are you looking for?">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                         <input type="text" class="form-control search-slt" placeholder="Location">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                <select class="form-control search-slt" id="exampleFormControlSelect1">
                                 <option>All Categories</option>
                                 <option>Hotels</option>
                                 <option>Events</option>
@@ -41,26 +41,11 @@ $this->title = 'VENUES';
                         </div>
                     <!--end-->
    
-
-
-
-
-
         <div class="explore">
                 <h1 >Venues</h1>
                 <h1 >Near Me</h1>
             <p><button type="button" class="btn btn-secondary">Explore Nearby venues</button></p>
-            </div>
-
-
-
-
-
-
-
-
-
-  
+            </div> 
 </div>
       </div>
     </div>
@@ -266,64 +251,9 @@ $this->title = 'VENUES';
 </div>
 </div>
 
-<div class="container-fluid text-center my-3">
+<div class="container-fluid text-center my-3 mv-venues">
     <h2>Most Visited Venues</h2>
-    <!-- <div class="row mx-auto my-auto">
-        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-            <div class="carousel-inner " role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="images/new-zealand.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="images/location.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="images/landscape.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="images/chairs.jpg">
-                        </div>
-                    </div>
-                </div>
-                 <div class="carousel-item">
-                    <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="images/agriculture.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="images/rockymountains.jpg">
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div> -->
+    
     <div class="container-fluid">
         <div class="row">
             <div class="popular-vendors">
@@ -364,10 +294,6 @@ $this->title = 'VENUES';
               
             </div>
             </div>
-            
-       
-
-            
             </div>
 </div>
 
@@ -411,17 +337,10 @@ $this->title = 'VENUES';
               
             </div>
             </div>
-            
-       
-
-            
             </div>
             <div class="col-md-8">
                 <div id="homemap" style="width: 100%; height: 50px; border-radius: 5px"></div>
             </div>
             </div>
-
-        
-
         </div>
        

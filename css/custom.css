@@ -1,5 +1,10 @@
 
 /*search box css start here*/
+.searchbar{
+    margin-top: 20%;
+    padding-left:20%;
+    padding-bottom: 5%;
+}
 
 .search-slt{
     
@@ -56,3 +61,12 @@
 {
    font-family: "Roboto", "Open Sans";
 } 
+.card-pop img{
+    height: 5em;
+    width: 10em;
+}
+.popular-vendors{
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+

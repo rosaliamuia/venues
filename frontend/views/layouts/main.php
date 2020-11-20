@@ -21,7 +21,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="h-100">
+<body class="h-50">
 <?php $this->beginBody() ?>
 <div class="wrap" style="background: url(images/pier.jpg)">
 <header class="header">
