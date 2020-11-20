@@ -19,6 +19,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -38,13 +39,15 @@ AppAsset::register($this);
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="float-left">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Venues</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Service Providers</a></li>
+              <li class="nav-item active"><a href="#" class="nav-link rounded-pill listing-home-active">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item listing-home rounded-pill"><a href="#" class="nav-link">Venues</a></li>
+              <li class="nav-item listing-home rounded-pill"><a href="#" class="nav-link">Service Providers</a></li>
           </ul>
+          </div>
         </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                       <a href="#" role="button" class="nav-link dropdown-toggle font-weight-bold" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,9 +61,9 @@ AppAsset::register($this);
                         <a class="dropdown-item" href="#">Log Out</a>
                       </div>
                     </li>
-                    <li class="nav-item nav-pills"><a href="#" class="nav-link button btn-outline-danger">Add Listing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link rounded-pill addlisting">  Add Listing  <i class="fa fa-plus-circle"></i> </a></li>
                 </ul>
-            </div>
+
         </div>
     </nav>
 </header>
