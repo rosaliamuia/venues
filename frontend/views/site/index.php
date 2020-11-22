@@ -32,7 +32,7 @@ $this->title = 'VENUES';
                                                 </select>
                                      </div>
                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                 <button type="button" class="btn btn-danger wrn-btn rounded-circle"><i class="fa fa-search"></i></button>
+                                 <button type="button" class="btn btn-danger wrn-btn rounded-circle" onClick="location.href='site/sr'"><i class="fa fa-search"></i></button>
                                  </div>
                                         </div>
                                     </div>
