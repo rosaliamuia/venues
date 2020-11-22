@@ -72,6 +72,11 @@ class SiteController extends Controller
      *
      * @return mixed
      */
+    // return search-result page
+    public function actionSr()
+    {
+        return $this->render('sr');
+    }
     public function actionIndex()
     {
         return $this->render('index');

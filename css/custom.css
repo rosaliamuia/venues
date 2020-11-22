@@ -70,3 +70,47 @@
     margin-bottom: 1em;
 }
 
+/* searchresults styling */
+
+.sr-card-image{
+	height: 100px;
+	width: 150px;
+}
+.sr-header-buttons{
+	display: inline-flex;
+}
+.sr-header-buttons button{
+	margin: 1em;
+}
+
+#search-results-map{
+    width:  100%;
+	height: 600px; 
+	position: fixed !important;
+}
+.sr-margin{
+	margin-top: 5em;
+}
+.sr-headerspan{
+	font-size: 12px;
+	color: gray;
+
+}
+.card-horizontal {
+	display: flex;
+	flex: 1 1 auto;
+  }
+.card{
+	border: none !important;
+}
+.card-body{
+	margin-top:-1.25em;
+
+}
+.card-body h6,p{
+	font-weight: lighter;
+	line-height: 0.7;
+	font-size: 15px;
+	color: rgba(0,0,0);
+}
+
