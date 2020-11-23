@@ -57,7 +57,7 @@ AppAsset::register($this);
                         <a class="dropdown-item" href="#">Log Out</a>
                       </div>
                     </li>
-                    <a class="mr-2 mt-3" href="public/index.html"><i class="fa fa-envelope" aria-hidden="true"></i></i> </a>
+                    <a class="mr-2 mt-3" href="public/index.php"><i class="fa fa-envelope" aria-hidden="true"></i></i> </a>
                     <li class="nav-item"><a href="#" class="nav-link rounded-pill addlisting">  Add Listing  <i class="fa fa-plus-circle"></i> </a></li>
                 </ul>
         </div>
