@@ -41,6 +41,8 @@ AppAsset::register($this);
               <li class="nav-item active"><a href="#" class="nav-link rounded-pill listing-home-active">Home <span class="sr-only">(current)</span></a></li>
               <li class="nav-item listing-home rounded-pill"><a href="#" class="nav-link">Venues</a></li>
               <li class="nav-item listing-home rounded-pill"><a href="#" class="nav-link">Service Providers</a></li>
+              <li class="nav-item listing-home rounded-pill"><a href="site/contact" class="nav-link">Contact</a></li>
+
           </ul>
           </div>
         </div>
