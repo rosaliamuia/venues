@@ -2,7 +2,9 @@
 
 namespace frontend\models;
 
+
 use Yii;
+use frontend\models\User;
 
 /**
  * This is the model class for table "listings".
@@ -33,7 +35,7 @@ use Yii;
  *
  * @property Booking[] $bookings
  * @property Bookmarks[] $bookmarks
- * @property Listingstypes $listingsType
+// @property Listingstypes $listingsType
  * @property User $createdBy0
  * @property Listingsammenities[] $listingsammenities
  * @property Listingsextraspricing[] $listingsextraspricings
@@ -68,7 +70,7 @@ class Listings extends \yii\db\ActiveRecord
             [['createdAt'], 'safe'],
             [['listingName', 'videoUrl', 'website', 'email', 'facebook', 'twitter', 'instagram'], 'string', 'max' => 255],
             [['listingPhone'], 'string', 'max' => 100],
-            [['listingsTypeId'], 'exist', 'skipOnError' => true, 'targetClass' => Listingstypes::className(), 'targetAttribute' => ['listingsTypeId' => 'listingsTypeId']],
+            // [['listingsTypeId'], 'exist', 'skipOnError' => true, 'targetClass' => Listingstypes::className(), 'targetAttribute' => ['listingsTypeId' => 'listingsTypeId']],
             [['createdBy'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['createdBy' => 'id']],
         ];
     }
