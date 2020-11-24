@@ -7,6 +7,7 @@ use yii\bootstrap4\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use yii\helpers\Url;
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -59,8 +60,8 @@ AppAsset::register($this);
                         <a class="dropdown-item" href="#">Log Out</a>
                       </div>
                     </li>
-                    <a class="mr-2 mt-3" href="public/index.php"><i class="fa fa-envelope" aria-hidden="true"></i></i> </a>
-                    <li class="nav-item"><a href="#" class="nav-link rounded-pill addlisting">  Add Listing  <i class="fa fa-plus-circle"></i> </a></li>
+                    <a class="mr-2 mt-3" href="public/index.html"><i class="fa fa-envelope" aria-hidden="true"></i></i> </a>
+                    <li class="nav-item"><a href="<?= url::to(['listing/addlisting'])?>" class="nav-link rounded-pill addlisting">  Add Listing  <i class="fa fa-plus-circle"></i> </a></li>
                 </ul>
         </div>
     </nav>
@@ -74,7 +75,7 @@ AppAsset::register($this);
     </div>
 </div>
             <!--footer-->
-            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
         <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
