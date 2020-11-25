@@ -22,15 +22,14 @@ $this->title = 'VENUES';
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                 <select class="form-control search-slt" id="exampleFormControlSelect1">
-
-                                <option>All Categories</option>
-                                <option>Hotels</option>
-                                <option>Events</option>
-                                <option>Restaurants</option>
-                                <option>Shops</option>
-                                <option>Fitness</option>
-                                <option>Open Spaces</option>
-                                                </select>
+                  <option>All Categories</option>
+                  <option>Hotels</option>
+                  <option>Events</option>
+                  <option>Restaurants</option>
+                  <option>Shops</option>
+                  <option>Fitness</option>
+                  <option>Open Spaces</option>
+                  </select>
                                      </div>
                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                  <button type="button" class="btn btn-danger wrn-btn rounded-circle" onClick="location.href='site/sr'"><i class="fa fa-search"></i></button>
@@ -38,10 +37,10 @@ $this->title = 'VENUES';
                                         </div>
                                     </div>
                                 </div>
-                            
+
                         </div>
                     <!--end-->
-   
+
         <div class="explore">
           <h1 >Venues</h1>
           <h1 >Near Me</h1>
