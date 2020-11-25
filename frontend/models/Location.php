@@ -40,6 +40,7 @@ class Location extends \yii\db\ActiveRecord
             [['listingsId', 'address', 'country', 'county', 'city', 'street', 'lattitude', 'longitude', 'vicinity', 'createdAt'], 'required'],
             [['listingsId', 'createdAt'], 'integer'],
             [['lattitude', 'longitude'], 'number'],
+            [['createdAt'], 'safe'],
             [['address', 'country', 'county', 'city', 'street', 'vicinity'], 'string', 'max' => 255],
             [['listingsId'], 'exist', 'skipOnError' => true, 'targetClass' => Listings::className(), 'targetAttribute' => ['listingsId' => 'listingsId']],
         ];
